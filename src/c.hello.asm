@@ -6,7 +6,7 @@ SECTION .data			; initalized data
 
 SECTION .text			; the code
 	global main		; main used so gcc can be linker
-				; can be changed to start for ld
+				; can be changed to _start for ld
 	extern puts
 
 main:
