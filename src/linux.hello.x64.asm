@@ -4,10 +4,10 @@
 section .data				; constants
 	text db "Hello, World",10	; const char* Hello World
 
-section .text				;function declaring
-	global _start
+section .text				; function declaring
+	global main			; used for gcc
 
-_start:					; main()
+main:					; start
 	mov rax, 1			; sys_write
 	mov rdi, 1			; write to STDOUT
 	mov rsi, text			; pointer to text
